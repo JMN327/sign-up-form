@@ -74,6 +74,8 @@ body{
   position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   height:100vh;
   /* max-width: 500px; */
   
@@ -97,6 +99,21 @@ body{
 .odin-logo {
   height: 85%;
 }
+
+.img-credit{
+  color: white;
+  padding: 8px;
+  font-size: 14px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+a { color:white;}
+a:visited { text-decoration: none; color:white; }
+a:hover { text-decoration: none; color:white; }
+a:focus { text-decoration: none; color:white; }
+a:hover, a:active { text-decoration: none; color:white;}
+
 .main-panel{
   width: clamp(240px, 60%, 850px);
 }

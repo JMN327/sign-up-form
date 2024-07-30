@@ -11,7 +11,7 @@
 }
 
 body {
-  line-height: 1.5;
+  line-height: 1.2;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -71,7 +71,7 @@ body{
 }
 
 .side-panel{
-  width: clamp(160px, 40%, 500px);
+  width: 40%;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -119,20 +119,26 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: clamp(240px, 60%, 850px);
+  width: 60%;
 }
 
 .main-top, legend{
   font-size: 24px;
-  padding: 32px 32px 16px 64px;
+  padding: 32px 64px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-style: normal;
 }
 
+.main-middle {
+  box-shadow: 0px 6px 3px -3px lightgrey;
+  margin-bottom: 32px;
+}
+
 fieldset {
   display: flex;
   justify-content:flex-start;
+  flex-wrap: wrap;
   border: 0px;
 }
 
@@ -140,6 +146,7 @@ fieldset {
   padding: 12px 64px ;
   display: flex;
   flex-direction: column;
+  
 }
 
 label {
@@ -163,4 +170,14 @@ input {
 
   border-radius: 4px;
   border: 1px solid #E5E7EB;
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid rgba(70, 70, 253, 0.603);
+  box-shadow: 1px 1px 2px grey;
+}
+
+input:invalid {
+  border: 1px solid red;
 }
